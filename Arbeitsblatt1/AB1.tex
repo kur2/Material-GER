@@ -1,0 +1,99 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage[left=2.2 cm,right=2.2 cm,top=1.5cm,bottom=2.0cm]{geometry}
+
+\newcounter{aufgnr}
+
+\begin{document}
+\begin{center}
+\section*{Die Von-Neumann-Architektur}
+\subsection*{Arbeitsblatt 1 - Erste Schritte mit dem Simulator}
+\end{center}
+
+\hrule
+\vspace{.5cm}
+
+~\\
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Die erste Automatisierung:}
+Gib die vorher an der Tafel simulierten Programme in den Simulator ein und führe die Simulation aus. Schreibe nach der Simulation die Inhalte der ersten 10 Speicherzellen auf. Nachdem der Simulator das Programm beendet hat, findest du den Speicherauszug als Datei im Ordner für Programme. Beim ersten Programm darfst du das Notieren der 10 Speicherzellen überspringen.\\
+\\
+\textbf{Programm 1:}\\
+1 0\\
+\\
+\textbf{Programm 2:}\\
+21 5\\
+30 7\\
+23 8\\
+1 0\\
+\\
+\textbf{Programm 3:}\\
+21 5\\
+40 7\\
+23 8\\
+1 0\\
+\\
+\textbf{Programm 4:} Ein Programm, dass $7 \cdot 6$ berechnet und das Ergebnis in Zelle 3 speichert. Notiere hier auch das Programm.\\
+\\
+\\
+\\
+\\
+\\
+
+
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Laden aus Speicherzellen:}
+Gib die Programme 5 und 6 nacheinander (einzeln) in den Simulator ein, führe die Simulation aus und notiere die ersten 10 Speicherzellen. Vergleiche die Programmtexte und die Ergebnisse. Worin unterscheiden sich die Funktionen, die von den beiden Programmen berechnet werden?\\
+\\
+\textbf{Programm 5:}\\
+21 10\\
+30 11\\
+23 8\\
+1 0\\
+0 0\\
+5 4\\
+\\
+\textbf{Programm 6:}\\
+22 10\\
+31 11\\
+23 8\\
+1 0\\
+0 0\\
+5 4\\
+\\
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Aus einem Ergebnis wird eine neue Aufgabe:}
+Verändere eines der Programme 5 oder 6 so, dass es das Produkt der Zahlen aus den Speicherzellen mit den Adressen 10 und 11 berechnet und in der Speicherzelle 10 ablegt. Notiere dein Programm, simuliere es und notiere auch die Inhalte der ersten 12 Speicherzellen nach der Ausführung. Schreibe vor der Ausführung den Wert 1 in Zelle 10 und den Wert 2 in Zelle 11.\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+Kopiere nun den gesamten Speicherauszug und gib ihn als neues Programm in den Simulator. Notiere nach der Simulation den Inhalt der Speicherzelle 10. Wiederhole diesen Vorgang mindestens 3 Mal. Was wird passieren, wenn das Programm immer wieder ausgeführt wird?\\
+\\
+\\
+\\
+\\
+\\
+Wiederhole Aufgabe 3, schreibe diesmal jedoch die Werte 3 und 5 in die Zellen 10 und 11. Welche Ergebnisse erscheinen diesmal in der Zelle 10? Notiere diese!\\
+\\
+\\
+\\
+Was passiert, wenn man die Werte 3 und 5 vertauscht, also in umgekehrter Reihenfolge in die Zellen 10 und 11 schreibt? Notiere die Ergebnisse, die in Zelle 10 erscheinen!
+
+
+
+
+
+\end{document}

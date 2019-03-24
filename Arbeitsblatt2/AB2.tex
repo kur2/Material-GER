@@ -1,0 +1,108 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{array}
+
+\usepackage[left=2.2 cm,right=2.2 cm,top=1.5cm,bottom=2.0cm]{geometry}
+
+\newcounter{aufgnr}
+
+\begin{document}
+\begin{center}
+\section*{Die Von-Neumann-Architektur}
+\subsection*{Arbeitsblatt 2 - Der Rechner lernt Zuhören und Sprechen}
+\end{center}
+
+\hrule
+\vspace{.5cm}
+
+Tipp für alle Aufgaben: Die Programme, die du in den Simulator eingibst, gibst du immer in Maschinensprache, also als Folge von Zahlen, ein. Der Simulator (und auch andere Computer) verstehen dies nicht anders, aber für einen Menschen sind die Programme so nur sehr schwer lesbar. Du kannst dir das Verständnis erleichtern, indem du neben den Programmcode Kommentare schreibst. Mit der Kommandoreferenz kannst du herausfinden, was einzelne Befehle machen. Achte darauf, dass du in Kommentaren keine alleinstehenden Zahlen schreibst, sonst erkennt der Simulator sie als Befehl. Du kannst z.B. Anführungszeichen setzen, wenn du Zahlen benutzen möchtest.\\
+\\
+\textit{Beispiel:}\\
+21 7 Lädt die Zahl $\glqq 7\grqq$ in den Accumulator\\
+50 6 Multipliziert den Wert im Accumulator mit der Zahl $\glqq 6\grqq$\\
+23 8 Speichert den Wert in Accumulator in der Speicherzelle $\glqq 8\grqq$\\
+1 0 Hält die Maschine an (Programmende)\\
+\\
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Erster Kontakt zur Außenwelt:}
+\textbf{Programm 1:}\\
+80 0\\
+81 0\\
+1 0\\
+\\
+Gib Programm 1 in den Simulator ein, führe es aus und notiere, was es tut. Am besten lässt du die Simulation mehrmals laufen.\\
+\\
+\\
+\textbf{Programm 2:}\\
+80 0\\
+50 2\\
+81 0\\
+1 0\\
+\\
+Simuliere Programm 2 und notiere, was es tut.\\
+\\
+\\
+\textbf{Programm 3:}\\
+80 0\\
+23 12\\
+80 0\\
+31 12\\
+81 0\\
+1 0\\
+\\
+Simuliere Programm 3 und notiere, was es tut.\\
+\\
+\\
+\\
+
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Wenn die Eingabe das Programm verändert:}
+\textbf{Programm 4:}\\
+80 0\\
+23 6\\
+21 12\\
+0 3\\
+81 0\\
+1 0\\
+\\
+Simuliere Programm 4 mehrmals. Gib folgende Werte ein, wenn der Simulator darum bittet und notiere die zugehörigen Ausgaben:
+\begin{table}[h]
+\begin{tabular}{|c|>{\centering}p{1.2cm}|>{\centering}p{1.2cm}|>{\centering}p{1.2cm}|>{\centering}p{1.2cm}|>{\centering\arraybackslash}p{1.2cm}|}
+\hline
+Eingabe & 30 & 40 & 50 & 60 & 0\\
+\hline
+Ausgabe &    &    &    &    &   \\
+\hline
+\end{tabular}
+\end{table}\\
+Welche Bedeutung hat der Wert, der eingegeben wird?\\
+\\
+\\
+Was würde passieren, wenn der Wert $1$ eingegeben wird? Was passiert bzw. was passiert nicht? Stelle eine Vermutung auf und bestätige Sie durch eine Simulation. \\
+\\
+\\
+Was passiert bei der Eingabe $9$?\\
+\\
+\\
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Ein einfacher Taschenrechner:}
+Verändere Programm 4 so, dass es nicht mit 12 und 3 rechnet, sondern mit 35 und 7.\\
+\\
+Verändere anschließend das Programm so, dass die Zahlen mit denen gerechnet wird, vom Benutzer eingegeben werden können. Notiere das Programm. Achtung: Wenn du neue Zeilen einfügst, musst du meistens die Zieladressen einiger Befehle korrigieren!\\
+\\
+\\
+\stepcounter{aufgnr}
+\subsubsection*{Aufgabe \theaufgnr: Ein Gruß aus der Mathematik:}
+In der Mathematik muss man häufig Werte von Termen berechnen. Da der Computer ein Automatisierungsgerät ist, kann er uns diese Arbeit abnehmen. Schreibe ein Programm, dass den Wert des Termes $2 \cdot x - 6$ berechnet, wobei der Wert $x$ in einer Eingabe erfragt und das Ergebnis in einer Ausgabemeldung ausgegeben werden soll. Notiere das Programm.\\
+\\
+Schreibe auch ein Programm, dass die Nullstelle der linearen Funktion $y = m \cdot x + b$ berechnet, wobei $m$ und $b$ vom Benutzer eingegeben werden sollen.\\
+
+\end{document}

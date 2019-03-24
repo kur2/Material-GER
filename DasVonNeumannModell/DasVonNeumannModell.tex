@@ -1,0 +1,53 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{ngerman}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{framed}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\usepackage[left=2.2 cm,right=2.2 cm,top=1.5cm,bottom=2.0cm]{geometry}
+
+\newcounter{aufgnr}
+
+\begin{document}
+\begin{center}
+\section*{Die Von-Neumann-Architektur}
+\subsection*{Beschreibung des Modelles}
+\end{center}
+
+\hrule
+\vspace{.5cm}
+
+Das Von-Neumann-Modell (auch: Von-Neumann-Architektur) ist eine Beschreibung einer universellen Rechenmaschine. Es beschreibt also eine Maschine, die nicht eine feste Aufgabe erfüllt, sondern prinzipiell jedes berechenbare Problem lösen kann. Entwickelt wurde es 1945 vom ungarisch-amerikanischen Informatiker John von Neumann und findet sich heute in den meisten bekannten Rechenmaschinen (Computern).\\
+
+\subsubsection*{Prinzipien des Modelles:}
+\begin{itemize}
+\item Die Maschine ist unabhängig vom Problem (bzw. Zweck)
+\item Der Speicher ist in
+	\begin{itemize}
+	\item aufeinander folgende,
+	\item linear adressierte (durchnummerierte)
+	\item gleich große
+	\end{itemize}
+	Speicherzellen aufgeteilt
+\item Befehle (Programme) und Daten befinden sich im selben Speicher
+\item Programme sind in aufeinander folgenden Speicherzellen abgelegt und werden ausgeführt, indem die Befehle in der Reihenfolge ausgeführt werden, in der sie im Speicher stehen
+\item Von dieser Reihenfolge kann durch (evtl. bedingte) Sprungbefehle abgewichen werden
+\end{itemize}
+
+\subsubsection*{Komponenten eines Von-Neumann-Rechners}
+\begin{itemize}
+\item Rechenwerk
+\item Steuerwerk
+\item Speicherwerk
+\item Eingabewerk
+\item Ausgabewerk
+\end{itemize}
+Das Rechen- und Steuerwerk werden häufig zusammengefasst und als CPU (\emph{Central processing unit}, engl. für zentrale Verarbeitungseinheit) bezeichnet.
+
+
+\end{document}
